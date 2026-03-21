@@ -3,146 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K5 Dragon Block C | O Ápice do Poder</title>
+    <title>K5 Dragon Block C | Oficial</title>
     <style>
+        /* Reset e Configurações Gerais */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            /* Configuração da Imagem de Fundo */
-            background-image: url('background.png'); /* Nome do arquivo que você salvou */
+            /* Aplicação da sua imagem background.png */
+            background-image: url('background.png');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* A imagem fica parada enquanto você rola */
+            background-attachment: fixed; /* Fixa o fundo para um efeito premium */
             background-repeat: no-repeat;
-            color: #ffffff;
-            background-color: #000; /* Cor de fundo caso a imagem falhe */
+            background-color: #0b0b0b;
+            color: #fff;
         }
 
-        /* Camada escura para dar leitura ao texto */
-        .overlay {
-            background: rgba(0, 0, 0, 0.6);
+        /* Máscara escura para destacar o conteúdo */
+        .main-wrapper {
+            background: rgba(0, 0, 0, 0.5); /* Escurece levemente a imagem de fundo */
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+            width: 100%;
         }
 
+        /* Navegação */
         nav {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 15px;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
             text-align: center;
-            border-bottom: 2px solid #ff4500;
+            border-bottom: 3px solid #ff4500;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         nav a {
-            color: white;
+            color: #fff;
             text-decoration: none;
-            margin: 0 20px;
+            margin: 0 15px;
             font-weight: bold;
             text-transform: uppercase;
+            letter-spacing: 1px;
             transition: 0.3s;
         }
 
         nav a:hover {
             color: #ff4500;
+            text-shadow: 0 0 10px #ff4500;
         }
 
+        /* Header / Banner */
         header {
+            padding: 80px 20px;
             text-align: center;
-            padding: 100px 20px;
         }
 
         header h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             color: #ff4500;
-            text-shadow: 3px 3px 10px #000;
+            text-shadow: 4px 4px 15px #000;
             margin-bottom: 10px;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+        header p {
+            font-size: 1.4rem;
+            font-style: italic;
+            text-shadow: 2px 2px 5px #000;
         }
 
-        section {
-            background: rgba(20, 20, 20, 0.85); /* Fundo semi-transparente para as seções */
+        /* Conteúdo */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(8px); /* Efeito de desfoque no fundo do card */
             padding: 30px;
             border-radius: 15px;
+            border: 1px solid rgba(255, 69, 0, 0.4);
             margin-bottom: 30px;
-            border: 1px solid rgba(255, 69, 0, 0.3);
-            backdrop-filter: blur(5px); /* Efeito de vidro embaçado */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         h2 {
-            color: #ff4500;
-            margin-bottom: 15px;
-            border-left: 4px solid #ff4500;
-            padding-left: 10px;
+            color: #ff9800;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            text-transform: uppercase;
         }
 
-        .btn-discord {
+        .btn-action {
             display: inline-block;
-            background: #7289da;
+            background: #7289da; /* Cor do Discord */
             color: white;
-            padding: 15px 30px;
-            border-radius: 5px;
+            padding: 15px 35px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2rem;
-            transition: 0.3s;
-            margin-top: 20px;
+            font-size: 1.1rem;
+            transition: transform 0.2s, background 0.3s;
+            margin-top: 15px;
         }
 
-        .btn-discord:hover {
+        .btn-action:hover {
             background: #5b6eae;
-            transform: scale(1.05);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(114, 137, 218, 0.4);
         }
 
+        /* Rodapé */
         footer {
             text-align: center;
-            padding: 40px;
-            background: rgba(0,0,0,0.9);
-            margin-top: auto;
+            padding: 30px;
+            background: #000;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        strong {
+            color: #ff9800;
         }
     </style>
 </head>
 <body>
 
-    <div class="overlay">
+    <div class="main-wrapper">
+        
         <nav>
             <a href="#">Início</a>
             <a href="#">Sagas</a>
-            <a href="#">Ranking</a>
-            <a href="#">Loja</a>
+            <a href="#">Como Jogar</a>
+            <a href="#">Regras</a>
         </nav>
 
         <header>
             <h1>K5 DRAGON BLOCK C</h1>
-            <p style="font-size: 1.5rem;">O ápice do poder é HARDCORE!</p>
-            <a href="https://discord.gg/CnHwkzAv" class="btn-discord" target="_blank">Entrar no Discord</a>
+            <p>"O Ápice do Poder é Hardcore"</p>
         </header>
 
         <div class="container">
-            <section>
-                <h2>Sobre o Servidor</h2>
-                <p>Prepare-se para uma experiência única. No K5 DBC, o desafio é levado ao limite. Treine como um Saiyajin, domine o Instinto Superior e enfrente bosses que exigem estratégia e poder real.</p>
+            
+            <section class="card">
+                <h2>Sobre o Projeto</h2>
+                <p>Bem-vindo ao <strong>K5 Dragon Block C</strong>. Nosso servidor foca em uma progressão desafiadora onde cada nível de poder deve ser conquistado com esforço. Enfrente bosses customizados, participe de torneios e domine as transformações mais poderosas do universo.</p>
             </section>
 
-            <section>
-                <h2>Informações de Conexão</h2>
-                <p><strong>IP:</strong> jogar.k5dbc.com.br</p>
-                <p><strong>Versão:</strong> 1.7.10 (Necessário Modpack Oficial)</p>
+            <section class="card" style="text-align: center;">
+                <h2>Junte-se à Comunidade</h2>
+                <p>Acesse nosso Discord para baixar o Modpack oficial e conferir o IP do servidor.</p>
+                <a href="https://discord.gg/CnHwkzAv" class="btn-discord btn-action" target="_blank">Entrar no Discord</a>
             </section>
+
+            <section class="card">
+                <h2>Status do Reino</h2>
+                <p>• <strong>Versão:</strong> 1.7.10</p>
+                <p>• <strong>Dificuldade:</strong> Hardcore</p>
+                <p>• <strong>Vagas Staff:</strong> Em breve</p>
+            </section>
+
         </div>
 
         <footer>
-            <p>&copy; 2026 K5 Dragon Block C - Todos os direitos reservados.</p>
+            &copy; 2026 K5 Dragon Block C. Todos os créditos aos criadores do mod JinRyuu.
         </footer>
+
     </div>
 
 </body>
