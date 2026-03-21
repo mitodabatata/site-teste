@@ -5,41 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K5 Dragon Block C | Oficial</title>
     <style>
-        /* Reset e Configurações Gerais */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Trebuchet MS', sans-serif;
         }
 
         body {
-            /* Aplicação da sua imagem background.png */
+            /* Alterado para buscar o arquivo .jpg */
             background-image: url('background.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Fixa o fundo para um efeito premium */
+            background-attachment: fixed;
             background-repeat: no-repeat;
-            background-color: #0b0b0b;
+            background-color: #000;
             color: #fff;
         }
 
-        /* Máscara escura para destacar o conteúdo */
-        .main-wrapper {
-            background: rgba(0, 0, 0, 0.5); /* Escurece levemente a imagem de fundo */
+        /* Camada para escurecer o fundo e focar no conteúdo */
+        .overlay {
+            background: rgba(0, 0, 0, 0.6); 
             min-height: 100vh;
             width: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
-        /* Navegação */
         nav {
-            background: rgba(0, 0, 0, 0.85);
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px;
             text-align: center;
-            border-bottom: 3px solid #ff4500;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            border-bottom: 2px solid #ff4500;
         }
 
         nav a {
@@ -48,133 +45,80 @@
             margin: 0 15px;
             font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: 0.3s;
         }
 
-        nav a:hover {
-            color: #ff4500;
-            text-shadow: 0 0 10px #ff4500;
-        }
-
-        /* Header / Banner */
         header {
-            padding: 80px 20px;
             text-align: center;
+            padding: 80px 20px;
         }
 
         header h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
             color: #ff4500;
-            text-shadow: 4px 4px 15px #000;
-            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px #000;
         }
 
-        header p {
-            font-size: 1.4rem;
-            font-style: italic;
-            text-shadow: 2px 2px 5px #000;
-        }
-
-        /* Conteúdo */
         .container {
-            max-width: 1000px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px;
         }
 
-        .card {
-            background: rgba(15, 15, 15, 0.8);
-            backdrop-filter: blur(8px); /* Efeito de desfoque no fundo do card */
+        .content-box {
+            background: rgba(0, 0, 0, 0.75);
             padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 69, 0, 0.4);
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        h2 {
-            color: #ff9800;
+            border-radius: 10px;
+            border: 1px solid #ff4500;
             margin-bottom: 20px;
-            font-size: 1.8rem;
-            text-transform: uppercase;
+            text-align: center;
         }
 
-        .btn-action {
+        .btn-discord {
             display: inline-block;
-            background: #7289da; /* Cor do Discord */
+            background: #5865F2;
             color: white;
-            padding: 15px 35px;
-            border-radius: 8px;
+            padding: 12px 25px;
+            border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.2s, background 0.3s;
             margin-top: 15px;
         }
 
-        .btn-action:hover {
-            background: #5b6eae;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(114, 137, 218, 0.4);
-        }
-
-        /* Rodapé */
         footer {
+            margin-top: auto;
             text-align: center;
-            padding: 30px;
+            padding: 20px;
             background: #000;
-            font-size: 0.9rem;
-            color: #888;
-        }
-
-        strong {
-            color: #ff9800;
+            font-size: 0.8rem;
         }
     </style>
 </head>
 <body>
 
-    <div class="main-wrapper">
-        
+    <div class="overlay">
         <nav>
             <a href="#">Início</a>
-            <a href="#">Sagas</a>
-            <a href="#">Como Jogar</a>
-            <a href="#">Regras</a>
+            <a href="#">Wiki</a>
+            <a href="#">Download</a>
         </nav>
 
         <header>
             <h1>K5 DRAGON BLOCK C</h1>
-            <p>"O Ápice do Poder é Hardcore"</p>
+            <p>O Ápice do Poder é Hardcore</p>
         </header>
 
         <div class="container">
-            
-            <section class="card">
-                <h2>Sobre o Projeto</h2>
-                <p>Bem-vindo ao <strong>K5 Dragon Block C</strong>. Nosso servidor foca em uma progressão desafiadora onde cada nível de poder deve ser conquistado com esforço. Enfrente bosses customizados, participe de torneios e domine as transformações mais poderosas do universo.</p>
-            </section>
-
-            <section class="card" style="text-align: center;">
-                <h2>Junte-se à Comunidade</h2>
-                <p>Acesse nosso Discord para baixar o Modpack oficial e conferir o IP do servidor.</p>
-                <a href="https://discord.gg/CnHwkzAv" class="btn-discord btn-action" target="_blank">Entrar no Discord</a>
-            </section>
-
-            <section class="card">
-                <h2>Status do Reino</h2>
-                <p>• <strong>Versão:</strong> 1.7.10</p>
-                <p>• <strong>Dificuldade:</strong> Hardcore</p>
-                <p>• <strong>Vagas Staff:</strong> Em breve</p>
-            </section>
-
+            <div class="content-box">
+                <h2>Servidor Online</h2>
+                <p>Entre no nosso universo e desperte o seu Ki!</p>
+                <p><strong>IP:</strong> jogar.k5dbc.com.br</p>
+                <a href="https://discord.gg/CnHwkzAv" class="btn-discord">Entrar no Discord</a>
+            </div>
         </div>
 
         <footer>
-            &copy; 2026 K5 Dragon Block C. Todos os créditos aos criadores do mod JinRyuu.
+            &copy; 2026 K5 Dragon Block C - Fan Site
         </footer>
-
     </div>
 
 </body>
