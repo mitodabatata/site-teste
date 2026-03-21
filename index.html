@@ -3,160 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragon Block C | Servidor Oficial</title>
+    <title>K5 Dragon Block C | O Ápice do Poder</title>
     <style>
-        /* Reset básico */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Roboto, sans-serif;
         }
 
         body {
-            background-color: #121212;
+            /* Configuração da Imagem de Fundo */
+            background-image: url('background.png'); /* Nome do arquivo que você salvou */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* A imagem fica parada enquanto você rola */
+            background-repeat: no-repeat;
             color: #ffffff;
-            line-height: 1.6;
+            background-color: #000; /* Cor de fundo caso a imagem falhe */
         }
 
-        /* Cabeçalho e Navegação */
-        header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1500x400') no-repeat center/cover;
-            height: 300px;
+        /* Camada escura para dar leitura ao texto */
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            border-bottom: 4px solid #ff9800;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            color: #ff9800;
-            text-shadow: 2px 2px 10px #000;
-            text-transform: uppercase;
         }
 
         nav {
-            background: #1f1f1f;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
             text-align: center;
-            z-index: 1000;
+            border-bottom: 2px solid #ff4500;
         }
 
         nav a {
-            color: #fff;
+            color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-weight: bold;
+            text-transform: uppercase;
             transition: 0.3s;
         }
 
         nav a:hover {
-            color: #ff9800;
+            color: #ff4500;
         }
 
-        /* Conteúdo Principal */
+        header {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: #ff4500;
+            text-shadow: 3px 3px 10px #000;
+            margin-bottom: 10px;
+        }
+
         .container {
-            max-width: 1000px;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 0 auto;
             padding: 20px;
         }
 
         section {
-            margin-bottom: 40px;
-            background: #1e1e1e;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 5px solid #ff9800;
+            background: rgba(20, 20, 20, 0.85); /* Fundo semi-transparente para as seções */
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 69, 0, 0.3);
+            backdrop-filter: blur(5px); /* Efeito de vidro embaçado */
         }
 
         h2 {
+            color: #ff4500;
             margin-bottom: 15px;
-            color: #ffb74d;
+            border-left: 4px solid #ff4500;
+            padding-left: 10px;
         }
 
-        /* Botão de Download/IP */
-        .cta-button {
+        .btn-discord {
             display: inline-block;
-            background: #ff9800;
-            color: #000;
-            padding: 10px 20px;
+            background: #7289da;
+            color: white;
+            padding: 15px 30px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            margin-top: 10px;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            margin-top: 20px;
         }
 
-        .cta-button:hover {
-            background: #e68a00;
+        .btn-discord:hover {
+            background: #5b6eae;
+            transform: scale(1.05);
         }
 
-        /* Rodapé */
         footer {
             text-align: center;
-            padding: 20px;
-            background: #000;
-            font-size: 0.9rem;
-            color: #777;
+            padding: 40px;
+            background: rgba(0,0,0,0.9);
+            margin-top: auto;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>DRAGON BLOCK C</h1>
-        <p>Torne-se o guerreiro mais forte do universo!</p>
-    </header>
+    <div class="overlay">
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sagas</a>
+            <a href="#">Ranking</a>
+            <a href="#">Loja</a>
+        </nav>
 
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre o Mod</a>
-        <a href="#regras">Regras</a>
-        <a href="#download">Download/IP</a>
-    </nav>
+        <header>
+            <h1>K5 DRAGON BLOCK C</h1>
+            <p style="font-size: 1.5rem;">O ápice do poder é HARDCORE!</p>
+            <a href="https://discord.gg/CnHwkzAv" class="btn-discord" target="_blank">Entrar no Discord</a>
+        </header>
 
-    <div class="container">
-        
-        <section id="inicio">
-            <h2>Bem-vindo ao Nosso Servidor</h2>
-            <p>Explore o mundo de Dragon Ball no Minecraft. Treine seus atributos, aprenda técnicas de Ki como o Kamehameha e alcance transformações lendárias como o Super Saiyajin!</p>
-        </section>
+        <div class="container">
+            <section>
+                <h2>Sobre o Servidor</h2>
+                <p>Prepare-se para uma experiência única. No K5 DBC, o desafio é levado ao limite. Treine como um Saiyajin, domine o Instinto Superior e enfrente bosses que exigem estratégia e poder real.</p>
+            </section>
 
-        <section id="sobre">
-            <h2>O que é o Dragon Block C?</h2>
-            <p>O DBC é um mod técnico que adiciona sistemas de RPG complexos, incluindo:</p>
-            <ul style="margin-left: 20px; margin-top: 10px;">
-                <li>Saga Story Mode baseada no anime.</li>
-                <li>Mecânicas de voo e combate por Ki.</li>
-                <li>Raças: Saiyajin, Humano, Namekuseijin, Arcosiano e Majin.</li>
-            </ul>
-        </section>
+            <section>
+                <h2>Informações de Conexão</h2>
+                <p><strong>IP:</strong> jogar.k5dbc.com.br</p>
+                <p><strong>Versão:</strong> 1.7.10 (Necessário Modpack Oficial)</p>
+            </section>
+        </div>
 
-        <section id="regras">
-            <h2>Regras de Convivência</h2>
-            <ol style="margin-left: 20px;">
-                <li>Proibido o uso de hacks ou cheats externos.</li>
-                <li>Respeite todos os jogadores no chat.</li>
-                <li>Não abuse de bugs (reporte à staff).</li>
-            </ol>
-        </section>
-
-        <section id="download" style="text-align: center;">
-            <h2>Jogue Agora</h2>
-            <p>IP do Servidor: <strong>jogar.seuservidor.com</strong></p>
-            <p>Versão do Minecraft: 1.7.10</p>
-            <a href="#" class="cta-button">Baixar Modpack</a>
-        </section>
-
+        <footer>
+            <p>&copy; 2026 K5 Dragon Block C - Todos os direitos reservados.</p>
+        </footer>
     </div>
-
-    <footer>
-        &copy; 2026 Dragon Block C Fan Site - Feito para Guerreiros Z.
-    </footer>
 
 </body>
 </html>
